@@ -23,11 +23,19 @@
 
     <div id="social">
 
+      <h1>Social Media Dashboard</h1>
         <div id="media">
-            <h1>Social Media Dashboard</h1>
             <p>Total Followers: 23,004</p>
           
-            <p>Dark Mode</p>
+            <div class="container">
+              <h4>Dark Mode</h4>
+              <label id="switch" class="switch">
+                      <input type="checkbox" onchange="toggleTheme()" id="slider">
+                      <span class="slider round"></span>
+                  </label>
+              <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
+            </div>
+
         </div>
 
           <div class="yuti1">
@@ -96,7 +104,7 @@
 
     <div id="overview">
         <div id="today">
-            <h1>Overview - Today</h1>
+            <h2>Overview - Today</h2>
           </div>
     
           <div class="miniyuti">
@@ -202,5 +210,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Beso Berdzenishvili</a>.
   </div>
+  <script src="darkmode/darkmode.js"></script>
 </body>
 </html>

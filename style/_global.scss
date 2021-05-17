@@ -28,6 +28,11 @@ main{
     /*display: flex;*/
 }
 
+#media{
+    display: flex;
+    justify-content: space-between;
+}
+
 .yuti1{
     width:40vh;
     height:35vh;
@@ -105,4 +110,24 @@ main{
 #overview{
     grid-area:overview;
     /*display: flex;*/
+}
+
+.miniyuti{
+    margin:5px;
+    width:40vh;
+    height:20vh;
+    background-color:hsl(228, 28%, 20%);
+    border-radius:1.2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .numbers{
+        display:flex;
+        flex-direction: column;
+        .qveda{
+            color:white;
+            font-size:33px;
+            font-weight: bold;
+        }
+    }
 }
