@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size:14px;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "social"
+    "overview";
+    p{
+        color:hsl(228, 34%, 66%);
+    }
+}
+
+/* ზედა ზოლი */
+
+#social{
+    grid-area:social;
+    /*display: flex;*/
+}
+
+.yuti1{
+    width:40vh;
+    height:35vh;
+    background-color: hsl(208, 92%, 53%);
+    border-radius:1.2vh;
+    padding-top:1.2vh;
+    margin: 5px;
+}
+
+.yuti2{
+    width:40vh;
+    height:35vh;
+    background-color: hsl(203, 89%, 53);
+    border-radius:1.2vh;
+    padding-top:1.2vh;
+    margin: 5px;
+}
+
+.yuti3{
+    width:40vh;
+    height:35vh;
+    background-image: linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
+    border-radius:1.2vh;
+    padding-top:1.2vh;
+    margin: 5px;
+}
+
+.yuti4{
+    width:40vh;
+    height:35vh;
+    background-color: hsl(348, 97%, 39%);
+    border-radius:1.2vh;
+    padding-top:1.2vh;
+    margin: 5px;
+}
+
+.wina {
+    width:40vh;
+    height:33.8vh;
+    background-color:hsl(228, 28%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius:0 0 1.2vh 1.2vh;
+    text-align: center;
+    .header{
+        display: flex;
+        p{
+            color:hsl(228, 34%, 66%);
+            letter-spacing: 0px;
+        }
+    }
+    p{
+        letter-spacing: 3px;
+    }
+    span{
+        color:hsl(0, 0%, 100%);
+        font-size: 3.2em;
+        font-weight: bold;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        p{
+            color:hsl(163, 72%, 41%);
+            letter-spacing: 0px;
+        }
+    }
+}
+
+/* ქვედა ზოლი */
+
+#overview{
+    grid-area:overview;
+    /*display: flex;*/
+}

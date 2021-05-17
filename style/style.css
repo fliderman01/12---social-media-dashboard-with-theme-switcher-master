@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "social" "overview";
+}
+
+main p {
+  color: #8b97c6;
+}
+
+/* ზედა ზოლი */
+#social {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: social;
+  /*display: flex;*/
+}
+
+.yuti1 {
+  width: 40vh;
+  height: 35vh;
+  background-color: #198ff5;
+  border-radius: 1.2vh;
+  padding-top: 1.2vh;
+  margin: 5px;
+}
+
+.yuti2 {
+  width: 40vh;
+  height: 35vh;
+  background-color: #1ca0f2;
+  border-radius: 1.2vh;
+  padding-top: 1.2vh;
+  margin: 5px;
+}
+
+.yuti3 {
+  width: 40vh;
+  height: 35vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background-image: linear-gradient(to right, #fdc468, #df4996);
+  border-radius: 1.2vh;
+  padding-top: 1.2vh;
+  margin: 5px;
+}
+
+.yuti4 {
+  width: 40vh;
+  height: 35vh;
+  background-color: #c4032a;
+  border-radius: 1.2vh;
+  padding-top: 1.2vh;
+  margin: 5px;
+}
+
+.wina {
+  width: 40vh;
+  height: 33.8vh;
+  background-color: #252a41;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 0 1.2vh 1.2vh;
+  text-align: center;
+}
+
+.wina .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wina .header p {
+  color: #8b97c6;
+  letter-spacing: 0px;
+}
+
+.wina p {
+  letter-spacing: 3px;
+}
+
+.wina span {
+  color: white;
+  font-size: 3.2em;
+  font-weight: bold;
+}
+
+.wina .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wina .footer p {
+  color: #1db489;
+  letter-spacing: 0px;
+}
+
+/* ქვედა ზოლი */
+#overview {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: overview;
+  /*display: flex;*/
+}
+/*# sourceMappingURL=style.css.map */
