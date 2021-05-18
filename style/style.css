@@ -15,6 +15,7 @@ body {
 main {
   display: -ms-grid;
   display: grid;
+  justify-items: center;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
@@ -27,11 +28,13 @@ main p {
 }
 
 /* ზედა ზოლი */
-#social {
+#zoli {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: social;
-  /*display: flex;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #media {
@@ -139,12 +142,28 @@ main p {
   letter-spacing: 0px;
 }
 
+.wina:hover {
+  opacity: 0.9;
+}
+
 /* ქვედა ზოლი */
-#overview {
+#qvedazoli {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: overview;
-  /*display: flex;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#qvedaqveda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .miniyuti {
@@ -179,6 +198,10 @@ main p {
   font-weight: bold;
 }
 
+.miniyuti:hover {
+  opacity: 0.8;
+}
+
 html,
 body {
   height: 100%;
@@ -189,13 +212,17 @@ body {
   --color-primary: #00df0b;
   --color-secondary: #fbfbfe;
   --color-accent: #fd6f53;
+  --card-bg:hsl(227, 47%, 96%);
+  --text-white: hsl(230, 17%, 14%);
 }
 
 .theme-dark {
   --color-primary: #17ed90;
   --color-secondary: hsl(230, 17%, 14%);
   --color-accent: #12cdea;
+  --card-bg:hsl(228, 28%, 20%);
   --font-color: #ffffff;
+  --text-white: hsl(0, 0%, 100%);
 }
 
 .container {
@@ -215,6 +242,38 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+body {
+  background: var(--color-secondary);
+}
+
+h1 {
+  color: var(--font-color);
+}
+
+h2 {
+  color: var(--font-color);
+}
+
+h4 {
+  color: var(--font-color);
+}
+
+.wina {
+  background: var(--card-bg);
+}
+
+.wina span {
+  color: var(--text-white);
+}
+
+.miniyuti {
+  background: var(--card-bg);
+}
+
+.miniyuti .numbers .qveda {
+  color: var(--text-white);
 }
 
 .container button {
@@ -297,9 +356,5 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-h4 {
-  color: var(--font-color);
 }
 /*# sourceMappingURL=style.css.map */

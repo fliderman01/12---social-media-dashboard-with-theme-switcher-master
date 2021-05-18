@@ -11,6 +11,7 @@ body{
 
 main{
     display:grid;
+    justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
@@ -23,9 +24,9 @@ main{
 
 /* ზედა ზოლი */
 
-#social{
+#zoli{
     grid-area:social;
-    /*display: flex;*/
+    display: flex;
 }
 
 #media{
@@ -105,11 +106,22 @@ main{
     }
 }
 
+.wina:hover {
+    opacity: 0.9;
+}
+
+
 /* ქვედა ზოლი */
 
-#overview{
+#qvedazoli{
     grid-area:overview;
-    /*display: flex;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#qvedaqveda{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .miniyuti{
@@ -130,4 +142,8 @@ main{
             font-weight: bold;
         }
     }
+}
+
+.miniyuti:hover {
+    opacity: 0.8;
 }

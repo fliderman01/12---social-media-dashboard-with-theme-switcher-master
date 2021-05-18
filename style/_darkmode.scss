@@ -7,12 +7,16 @@ body {
   --color-primary: #00df0b;
   --color-secondary: #fbfbfe;
   --color-accent: #fd6f53;
+  --card-bg:hsl(227, 47%, 96%);
+  --text-white: hsl(230, 17%, 14%);
 }
 .theme-dark {
   --color-primary: #17ed90;
   --color-secondary: hsl(230, 17%, 14%);
   --color-accent: #12cdea;
+  --card-bg:hsl(228, 28%, 20%);
   --font-color: #ffffff;
+  --text-white: hsl(0, 0%, 100%);
 }
 .container {
   display: flex;
@@ -23,6 +27,41 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
+
+body{
+  background: var(--color-secondary);
+}
+
+h1{
+  color: var(--font-color);
+}
+
+h2{
+  color: var(--font-color);
+}
+
+h4{
+  color: var(--font-color);
+}
+
+.wina{
+  background:var(--card-bg);
+  span{
+    color: var(--text-white);
+  }
+}
+
+.miniyuti{
+  background:var(--card-bg);
+  .numbers{    
+    .qveda{
+      color: var(--text-white);
+    }
+  }
+}
+
+
+
 
 .container button {
   color: var(--font-color);
@@ -102,8 +141,4 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-h4{
-    color: var(--font-color);
 }
