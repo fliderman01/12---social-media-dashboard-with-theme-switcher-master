@@ -15,6 +15,7 @@ body {
 main {
   display: -ms-grid;
   display: grid;
+  padding: 3vh;
   justify-items: center;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -46,46 +47,56 @@ main p {
           justify-content: space-between;
 }
 
+#media .container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .yuti1 {
-  width: 40vh;
-  height: 35vh;
+  width: 36vh;
+  height: 30vh;
   background-color: #198ff5;
   border-radius: 1.2vh;
   padding-top: 1.2vh;
-  margin: 5px;
+  margin: 1.5vh;
 }
 
 .yuti2 {
-  width: 40vh;
-  height: 35vh;
+  width: 36vh;
+  height: 30vh;
   background-color: #1ca0f2;
   border-radius: 1.2vh;
   padding-top: 1.2vh;
-  margin: 5px;
+  margin: 1.5vh;
 }
 
 .yuti3 {
-  width: 40vh;
-  height: 35vh;
+  width: 36vh;
+  height: 30vh;
   background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
   background-image: linear-gradient(to right, #fdc468, #df4996);
   border-radius: 1.2vh;
   padding-top: 1.2vh;
-  margin: 5px;
+  margin: 1.5vh;
 }
 
 .yuti4 {
-  width: 40vh;
-  height: 35vh;
+  width: 36vh;
+  height: 30vh;
   background-color: #c4032a;
   border-radius: 1.2vh;
   padding-top: 1.2vh;
-  margin: 5px;
+  margin: 1.5vh;
+}
+
+.yuti4 .wina .footer p {
+  color: #dc414c;
 }
 
 .wina {
-  width: 40vh;
-  height: 33.8vh;
+  width: 36vh;
+  height: 29vh;
   background-color: #252a41;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,11 +122,18 @@ main p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wina .header p {
   color: #8b97c6;
   letter-spacing: 0px;
+}
+
+.wina .header img {
+  margin: 1.2vh;
 }
 
 .wina p {
@@ -138,6 +156,7 @@ main p {
 }
 
 .wina .footer p {
+  margin: 0.7vh;
   color: #1db489;
   letter-spacing: 0px;
 }
@@ -147,29 +166,10 @@ main p {
 }
 
 /* ქვედა ზოლი */
-#qvedazoli {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: overview;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#qvedaqveda {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .miniyuti {
-  margin: 5px;
-  width: 40vh;
-  height: 20vh;
+  margin: 1.5vh;
+  width: 36vh;
+  height: 17vh;
   background-color: #252a41;
   border-radius: 1.2vh;
   display: -webkit-box;
@@ -193,6 +193,7 @@ main p {
 }
 
 .miniyuti .numbers .qveda {
+  margin-top: 2.6vh;
   color: white;
   font-size: 33px;
   font-weight: bold;
@@ -200,6 +201,42 @@ main p {
 
 .miniyuti:hover {
   opacity: 0.8;
+}
+
+#overview {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "overview" "qvedaqveda";
+}
+
+#qvedazoli {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: overview;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#qvedaqveda {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: qvedaqveda;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#today {
+  margin: 1.5vh 0;
 }
 
 html,
