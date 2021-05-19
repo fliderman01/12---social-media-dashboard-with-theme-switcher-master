@@ -1,0 +1,59 @@
+@media screen and (max-width:375px){
+
+    main{
+        grid-template-columns: none;
+        grid-template-rows: none;
+        grid-template-areas: none;
+    }
+
+    .yuti1{
+        width:100%;
+        height:40vh;
+        margin: 6vh 0 4vh 0;
+    }
+
+    .yuti2{
+        width:100%;
+        height:40vh;
+        margin: 6vh 0 4vh 0;
+    }
+
+    .yuti3{
+        width:100%;
+        height:40vh;
+        margin: 6vh 0 4vh 0;
+    }
+
+    .yuti4{
+        width:100%;
+        height:40vh;
+        margin: 6vh 0 4vh 0;
+    }
+
+    .wina {
+        width:100%;
+        height:40vh;
+    }
+
+    #media{
+        display:inherit;
+        hr{
+            display:inherit;
+            border: 0; border-top: 0.5px solid grey;
+            margin:5vh 0;
+        }
+        .container{
+            justify-content:space-between;
+        }
+    }
+
+    #zoli{
+        display:inherit;
+    }
+
+    .miniyuti{
+        width:100%;
+        height:19vh;
+    }
+
+}

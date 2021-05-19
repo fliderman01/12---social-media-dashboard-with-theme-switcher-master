@@ -60,6 +60,10 @@ main p {
   margin-left: 2vh;
 }
 
+#media hr {
+  display: none;
+}
+
 .yuti1 {
   width: 36vh;
   height: 30vh;
@@ -266,6 +270,61 @@ main p {
 
 #today {
   margin: 1.5vh 0;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+        grid-template-areas: none;
+  }
+  .yuti1 {
+    width: 100%;
+    height: 40vh;
+    margin: 6vh 0 4vh 0;
+  }
+  .yuti2 {
+    width: 100%;
+    height: 40vh;
+    margin: 6vh 0 4vh 0;
+  }
+  .yuti3 {
+    width: 100%;
+    height: 40vh;
+    margin: 6vh 0 4vh 0;
+  }
+  .yuti4 {
+    width: 100%;
+    height: 40vh;
+    margin: 6vh 0 4vh 0;
+  }
+  .wina {
+    width: 100%;
+    height: 40vh;
+  }
+  #media {
+    display: inherit;
+  }
+  #media hr {
+    display: inherit;
+    border: 0;
+    border-top: 0.5px solid grey;
+    margin: 5vh 0;
+  }
+  #media .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #zoli {
+    display: inherit;
+  }
+  .miniyuti {
+    width: 100%;
+    height: 19vh;
+  }
 }
 
 html,
