@@ -9,6 +9,7 @@ body {
   --color-accent: #fd6f53;
   --card-bg:hsl(227, 47%, 96%);
   --text-white: hsl(230, 17%, 14%);
+  --grey-white: hsl(228, 12%, 44%);
 }
 .theme-dark {
   --color-primary: #17ed90;
@@ -17,6 +18,7 @@ body {
   --card-bg:hsl(228, 28%, 20%);
   --font-color: #ffffff;
   --text-white: hsl(0, 0%, 100%);
+  --grey-white:white;
 }
 .container {
   display: flex;
@@ -37,11 +39,11 @@ h1{
 }
 
 h2{
-  color: var(--font-color);
+  color: var(--grey-white);
 }
 
 h4{
-  color: var(--font-color);
+  color: var(--grey-white);
 }
 
 .wina{
@@ -104,7 +106,7 @@ h4{
   content: "";
   height: 18px;
   width: 18px;
-  left: 0px;
+  left: 3px;
   bottom: 4px;
   top: 0;
   bottom: 0;
@@ -128,7 +130,7 @@ input:focus + .slider {
 input:checked + .slider:before {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
-    transform: translateX(24px);
+    transform: translateX(25px);
     background: white;
     background-repeat: no-repeat;
     background-position: center;

@@ -36,6 +36,10 @@ main{
     justify-content: space-between;
     .container{
         justify-content: flex-end;
+        align-items: center;
+    }
+    label{
+        margin-left: 2vh;
     }
 }
 
@@ -139,6 +143,16 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    .icons{
+        .arrow{
+            display: flex;
+            align-items: center;
+            margin-top: 4vh;
+            img{
+                margin-right: 0vh;
+            }
+        }
+    }
     .numbers{
         display:flex;
         flex-direction: column;
@@ -148,6 +162,12 @@ main{
             font-size:33px;
             font-weight: bold;
         }
+    }
+    .green{
+        color:hsl(163, 72%, 41%);
+    }
+    .red{
+        color:hsl(356, 69%, 56%);
     }
 }
 

@@ -51,6 +51,13 @@ main p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#media label {
+  margin-left: 2vh;
 }
 
 .yuti1 {
@@ -182,6 +189,20 @@ main p {
           align-items: center;
 }
 
+.miniyuti .icons .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4vh;
+}
+
+.miniyuti .icons .arrow img {
+  margin-right: 0vh;
+}
+
 .miniyuti .numbers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,6 +218,14 @@ main p {
   color: white;
   font-size: 33px;
   font-weight: bold;
+}
+
+.miniyuti .green {
+  color: #1db489;
+}
+
+.miniyuti .red {
+  color: #dc414c;
 }
 
 .miniyuti:hover {
@@ -251,6 +280,7 @@ body {
   --color-accent: #fd6f53;
   --card-bg:hsl(227, 47%, 96%);
   --text-white: hsl(230, 17%, 14%);
+  --grey-white: hsl(228, 12%, 44%);
 }
 
 .theme-dark {
@@ -260,6 +290,7 @@ body {
   --card-bg:hsl(228, 28%, 20%);
   --font-color: #ffffff;
   --text-white: hsl(0, 0%, 100%);
+  --grey-white:white;
 }
 
 .container {
@@ -290,11 +321,11 @@ h1 {
 }
 
 h2 {
-  color: var(--font-color);
+  color: var(--grey-white);
 }
 
 h4 {
-  color: var(--font-color);
+  color: var(--grey-white);
 }
 
 .wina {
@@ -355,7 +386,7 @@ h4 {
   content: "";
   height: 18px;
   width: 18px;
-  left: 0px;
+  left: 3px;
   bottom: 4px;
   top: 0;
   bottom: 0;
@@ -380,7 +411,7 @@ input:focus + .slider {
 
 input:checked + .slider:before {
   -webkit-transform: translateX(24px);
-  transform: translateX(24px);
+  transform: translateX(25px);
   background: white;
   background-repeat: no-repeat;
   background-position: center;
